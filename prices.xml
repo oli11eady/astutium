@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<domain>
+	<suffix>.co.uk</suffix>
+	<GBP>£5.55</GBP>
+	<USD>$8.60</USD>	
+</domain>
+<domain>
+	<suffix>.org.uk</suffix>
+	<GBP>£5.55</GBP>
+	<USD>$8.60</USD>	
+</domain>
+
+<domain>
+	<suffix>.com</suffix>
+	<GBP>£6.99</GBP>
+	<USD>$10.83</USD>		
+</domain>
+
+<domain>
+	<suffix>.org</suffix>
+	<GBP>£6.99</GBP>
+	<USD>$10.83</USD>		
+</domain>
+</root>

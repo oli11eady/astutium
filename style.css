@@ -1,0 +1,177 @@
+p1,p2{
+    color: rgb(119,119,119);
+}
+#price{
+
+    color: black;
+    font-weight: bold;
+
+}
+ul {
+    color: black;
+}
+
+body { 
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+
+}
+
+#check
+{
+    background-color: rgb(92,183,92);
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    color: white;
+    border-radius: 7px;
+}
+
+
+ #continue{
+    
+    display: inline-block;
+    background-color: rgb(92,183,92);
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    color: white;
+    border-radius: 7px;
+    top: 50%;
+    left: 50%;
+    
+    margin-left: 40%;
+
+}
+
+#domain{
+    border-radius: 0px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-bottom: 7px;
+    font-size:16px;
+    
+}
+
+#end {
+    border-radius: 3px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    font-size:16px;
+    
+}
+
+#inner {
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+
+
+}
+
+#currency {
+    border-radius: 3px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    font-size:16px;
+}
+
+#form {
+    color: rgb(119,119,119);
+
+}
+#content a:hover #text {
+    display: inline-block;
+    position: relative;
+    top : 5px;
+    padding: 10px;
+    color: #335500;
+    font-weight: normal;
+    background: #e5e5e5;
+    text-align:left;
+    border: 1px solid #666;
+}
+
+#quest {
+    position: relative; ;
+    display: inline-block;
+    width: 10px;
+    line-height: 20px;
+    text-align: left;
+    border: 1px solid #666;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight:bold;
+    background-color: rgb(92,183,92);   
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#text {
+    display: none;
+}
+
+#popup a:hover {
+    display: inline;
+    background-color: rgb(92,183,92);
+    color: white;
+}
+
+#content {
+    background-color: rgb(245,245,245);
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#container {
+    display: block;
+    background-color: rgb(227,231,233);
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    border-width: 1px;
+    font-family: arial;
+    min-width: 1000px;
+    margin: 0 auto;
+
+    
+}
+
+#price {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 50px;
+
+}
+
+p2 {
+    padding-top: 20px;
+}
+
+#img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
