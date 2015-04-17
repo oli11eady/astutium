@@ -1,18 +1,22 @@
+
 <!DOCTYPE html>
 <html>
+<head>
 	<title>
 		Professional Domain Registration
 	</title>
 	<link rel="stylesheet" href="style.css">
+</head>
 	<div id="container">
 	    <div id="inner"> 
 	        <div id="content">
 	            <body>
-	            	<img id="img" src="progress2.gif" width="100" height="25" alt="Progress">
 	            	</br></br>
                   <table align="center" cellspacing="1" class="domainsuggestions">
                       <tbody><tr><th width="50"></th><th>Domain Name</th><th>Registration Period</th></tr>
+                      <tr><td><br/></td></tr>
                       
+
                       <tr><td><input type="checkbox" name="domains[]" value="abc123-example.org.uk"></td>
                       <td>abc123-example.org.uk</td><td><select name="domainsregperiod[abc123-example.org.uk]">
                       <option value="2">2 Year/s @ £5.55</option><option value="3">3 Year/s @ £8.32</option>
@@ -118,9 +122,16 @@
                       <option value="9">9 Year/s @ £92.40</option><option value="10">10 Year/s @ £111.50</option>
                       </select></td></tr>
                    </tbody></table>
-                 <p align="center"><input type="submit" value="Click to Continue >>"></p>
-	            </body>
-	        </div>
+                   <br/>
+                    
+	            
+	        
+                 <form action="information.html" method="post"> 
+                         <input type="submit" id="continue2" value="Click to continue">
+                     </form>
+                     </body>
 	    </div>
+      </div>
+      
 	</div>
 </html>
