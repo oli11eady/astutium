@@ -1,67 +1,152 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<title>
-		Professional Domain Registration
-
-	</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src ="DomainCheck.js"></script>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	</head>
-	<link rel="stylesheet" href="style.css">
-	<div id="container">
-	    <div id="inner"> 
-	        <div id="content">
-	            <body>
-	                <p1 name="title">Why Register Your Domains With <span class="brand">Astutium</span></p1> 
-	                <div id="list">
-		                <ul>
-		                    <li>ICANN Accredited Domain Registrar</li>
-		                    <li>Directly Accredited for 200+ ccTLDs</li>
-		                    <li>24/7/365 Support</li>
-		                    <li>Free WHOIS-ID Protection
-		                    <a id="popup">
-		                    	
-		                    	<span id= "quest">?</span>
-		                    	
-		                    	<span id="text">
-		                    		WHOIS Privacy allows you to register domain names privately by protecting your contact details such as name, email, address and phone number from public view. It is not supported on every extension.
-		                    	</span>
-		                    </a></li>
-		                </ul>
-	                </div>
-	                <p2>
-	                	Start your web hosting experience with us by entering the domain name you want to register, transfer or simply purchase hosting below...
-	                </p2>
-	                <br></br>
-	                <div id="form">
-		                
-		                     <input type="text" id="domain" name="domain" placeholder="Enter Domain Name Here">
-		                     <select id="end" name="end">
-		                         <option>.co.uk</option>
-		                         <option>.com</option>
-		                         <option>.org.uk</option>
-		                         <option>.org</option> 
-		                     </select>
-		                     <input type="button" id="check" name="check" value="Check Availability">
-		                     <select id="currency" name="currency">
-		                         <option selected>GBP</option>
-		                         <option>USD</option>
-		                     </select>
-		                     
-		                  <span id="price">Estimated Price:</span> 
-	               
-	                 
-	                 <br></br>
-
-	                 <form action="pricing" method="get"> 
-		                     <input type="submit" id="continue" value="Click to continue">
-		                 </form>
-                   </div> 
-                     </div>
-	    </div>
-	</div>
-	            </body>
-	      
+    <head>
+        <title>
+            Professional Domain Registration
+        </title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src ="DomainCheck.js"></script>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    </head>
+    <link rel="shortcut icon" href="https://www.astutium.com/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <div id="container">
+        <div id="progress">
+            <span class="label current">1</span>
+            <span class="bar"></span>
+            <span class="label">2</span>
+            <span class="bar"></span>
+            <span class="label">3</span>
+            <br/>
+            <!-- <span id="choose">Choose a Domain</>
+                <span id="pricing">Pricing</span>
+                
+                <span id="complete">Complete your order</span>-->
+        </div>
+        <div id="inner">
+            <div id="content">
+                <body>
+                    <div id="list">
+                        <p1 name="title">Why Register Your Domains With <span class="brand">Astutium</span></p1>
+                        <ul>
+                            <li>ICANN Accredited Domain Registrar</li>
+                            <li>Directly Accredited for 200+ ccTLDs</li>
+                            <li>24/7/365 Support</li>
+                            <li>Free WHOIS-ID Protection
+                                <a id="popup">
+                                <span id= "quest">?</span>
+                                <span id="text">
+                                WHOIS Privacy allows you to register domain names privately by protecting your contact details such as name, email, address and phone number from public view. It is not supported on every extension.
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p2>Start your 
+                        web hosting experience with us by entering the domain name you want to register, transfer or simply purchase hosting below...
+                    </p2>
+                    <br></br>
+                    <div id="form">
+                    	<span id="www">www.</span> 
+                        <input type="text" id="domain" name="domain" placeholder="Enter Domain Name Here">
+                        <select id="end" name="end">
+                            <option value ='.co.uk'>.co.uk</option>
+                            <option value ='.com'>.com</option>
+                            <option value ='.org'>.org</option>
+                            <option value ='.net'>.net</option>
+                            <option value ='.biz'>.biz</option>
+                            <option value ='.info'>.info</option>
+                            <option value ='.org.uk'>.org.uk</option>
+                            <option value ='.us'>.us</option>
+                            <option value ='.uk'>.uk</option>
+                            <option value ='.me'>.me</option>
+                            <option value ='.me.uk'>.me.uk</option>
+                            <option value ='.mobi'>.mobi</option>
+                            <option value ='.ag'>.ag</option>
+                            <option value ='.asia'>.asia</option>
+                            <option value ='.aero'>.aero</option>
+                            <option value ='.blue'>.blue</option>
+                            <option value ='.global'>.global</option>
+                            <option value ='.kim'>.kim</option>
+                            <option value ='.mn'>.mn</option>
+                            <option value ='.onl'>.onl</option>
+                            <option value ='.pro'>.pro</option>
+                            <option value ='.pink'>.pink</option>
+                            <option value ='.red'>.red</option>
+                            <option value ='.rich'>.rich</option>
+                            <option value ='.sc'>.sc</option>
+                            <option value ='.shiksha'>.shiksha</option>
+                            <option value ='.vc'>.vc</option>
+                            <option value ='.vegas'>.vegas</option>
+                            <option value ='.vote'>.vote</option>
+                            <option value ='.voto'>.voto</option>
+                            <option value ='.xxx'>.xxx</option>
+                            <option value ='.com.ag'>.com.ag</option>
+                            <option value ='.org.ag'>.org.ag</option>
+                            <option value ='.im'>.im</option>
+                            <option value ='.co.im'>.co.im</option>
+                            <option value ='.org.im'>.org.im</option>
+                            <option value ='.com.im'>.com.im</option>
+                            <option value ='.net.im'>.net.im</option>
+                            <option value ='.in'>.in</option>
+                            <option value ='.org.in'>.org.in</option>
+                            <option value ='.firm.in'>.firm.in</option>
+                            <option value ='.co.in'>.co.in</option>
+                            <option value ='.net.in'>.net.in</option>
+                            <option value ='.ind.in'>.ind.in</option>
+                            <option value ='.gen.in'>.gen.in</option>
+                            <option value ='.plc.uk'>.plc.uk</option>
+                            <option value ='.ltd.uk'>.ltd.uk</option>
+                            <option value ='.net.uk'>.net.uk</option>
+                            <option value ='.plc.co.im'>.plc.co.im</option>
+                            <option value ='.uk.com'>.uk.com</option>
+                            <option value ='.jp.net'>.jp.net</option>
+                            <option value ='.eu.com'>.eu.com</option>
+                            <option value ='.us.org'>.us.org</option>
+                            <option value ='.gb.com'>.gb.com</option>
+                            <option value ='.gb.net'>.gb.net</option>
+                            <option value ='.ae.org'>.ae.org</option>
+                            <option value ='.co.com'>.co.com</option>
+                            <option value ='.br.com'>.br.com</option>
+                            <option value ='.uk.net'>.uk.net</option>
+                            <option value ='.africa.com'>.africa.com</option>
+                            <option value ='.ar.com'>.ar.com</option>
+                            <option value ='.de.com'>.de.com</option>
+                            <option value ='.gr.com'>.gr.com</option>
+                            <option value ='.hu.com'>.hu.com</option>
+                            <option value ='.hu.net'>.hu.net</option>
+                            <option value ='.jpn.com'>.jpn.com</option>
+                            <option value ='.kr.com'>.kr.com</option>
+                            <option value ='.in.net'>.in.net</option>
+                            <option value ='.qc.com'>.qc.com</option>
+                            <option value ='.mex.com'>.mex.com</option>
+                            <option value ='.ru.com'>.ru.com</option>
+                            <option value ='.no.com'>.no.com</option>
+                            <option value ='.se.com'>.se.com</option>
+                            <option value ='.sa.com'>.sa.com</option>
+                            <option value ='.se.net'>.se.net</option>
+                            <option value ='.uy.com'>.uy.com</option>
+                            <option value ='.za.com'>.za.com</option>
+                            <option value ='.ltd.co.im'>.ltd.co.im</option>
+                            <option value ='.us.com'>.us.com</option>
+                            <option value ='.cn.com'>.cn.com</option>
+                        </select>
+                        <input type="button" id="check" name="check" value="Check Availability">
+                        <select id="currency" name="currency">
+                            <option selected>GBP</option>
+                            <option>USD</option>
+                        </select>
+                        <span id="price">Estimated Price:</span>
+                        <br/><br/>
+                        <span id="avail"></span>  
+                        <br></br>
+                        <ul></ul>
+                        <form action="pricing.html" method="get"> 
+                            <input type="submit" id="continue" value="Click to continue">
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
