@@ -1,0 +1,180 @@
+  h1{
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+h2{
+
+	font-size: 18px;
+
+}
+
+.eachDomain{
+
+	  color: #0C89AF;
+	  font-size: 20px;
+}
+
+.optionsTable{
+
+	margin: 20px;
+	border: 1px solid black;
+	padding: 10px;
+
+}
+
+label{
+	display: inline-block;
+	width: 160px;
+	margin-bottom: 10px;
+}
+    body { 
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+     margin-left: 0px;
+     background-color: rgb(227,231,233);
+
+    }
+     #container {
+        display: block;
+        background-color: rgb(227,231,233);
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 20px;
+        border-width: 1px;
+        font-family: arial;
+        width: 1100px;
+        margin: 0 auto;     
+    }
+
+
+     #progress{
+
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        text-align: center;
+        font-family: "Open Sans";
+
+    }
+
+
+ #inner {
+        background-color: white;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+
+
+    }
+
+     #content {
+        background-color: rgb(245,245,245);
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: left;
+    }
+
+
+  .label{
+      display: inline-block;
+      background: #fff;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin: 0 auto;
+       border-width: 2px;
+        color: #eee;
+        border-style: solid;
+         background-color: #D0D7DA;
+        
+    }
+
+    .label.done{
+        border-width: 2px;
+        border-color: #eee;
+        border-style: solid;
+        color: white;
+    background: #8bc435;
+
+     
+    }
+
+    .label.current{
+
+        border-width: 2px;
+        border-color: #eee;
+        border-style: solid;
+        background-color: #20A1C9;
+        font-weight: bold;
+
+    }
+
+      .bar{
+        background: #fff;
+
+        display: inline-block;
+        width: 100px;
+        height: 5px;
+        border: 1px solid #d5d5da;
+        margin: 0 -5px 0px -5px;
+        border-radius: 10%;
+
+    }
+
+    .topContainer{
+
+    	margin-bottom: 50px;
+    }
+
+    #cart{
+        float: right;
+        height:50px;
+        width: 100px;
+    }
+    .cart{
+
+        width: 50px;
+        height: 50px;
+    }
+
+    #cartText{
+        display: inline;
+        position: relative;
+        bottom: 20px;
+        margin-right: 5px;
+        color: green;
+
+    }
+
+#continue{
+        
+        display: block;
+        position: relative;
+        background-color: #0C73AF;
+        padding-top: 9px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 9px;
+        color: white;
+        border-radius: 7px;
+        width: 200px;
+        margin: 0 auto;
+        border:1px solid #100D69;
+    }
+
+    #nameText{
+    
+    }

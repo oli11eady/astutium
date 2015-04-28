@@ -11,18 +11,19 @@
     <link rel="shortcut icon" href="https://www.astutium.com/images/favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <div id="container">
+        <div  class="topContainer">
         <div id="progress">
             <span class="label current">1</span>
             <span class="bar"></span>
             <span class="label">2</span>
             <span class="bar"></span>
             <span class="label">3</span>
-            <br/>
-            <!-- <span id="choose">Choose a Domain</>
-                <span id="pricing">Pricing</span>
-                
-                <span id="complete">Complete your order</span>-->
         </div>
+        <div class = "cartStuff">
+         <span id ='cart'><img src= 'img/cart.png' class ="cart"/><span id='cartText'>(0)<span></span>
+         <span id='cartTotal'></span>
+     </div>
+    </div>
         <div id="inner">
             <div id="content">
                 <body>
@@ -50,8 +51,8 @@
                     	<span id="www">www.</span> 
                         <input type="text" id="domain" name="domain" placeholder="Enter Domain Name">
                         <select id="end" name="end">
-                            <option value ='.co.uk'>.co.uk</option>
                             <option value ='.com'>.com</option>
+                            <option value ='.co.uk'>.co.uk</option>
                             <option value ='.org'>.org</option>
                             <option value ='.net'>.net</option>
                             <option value ='.biz'>.biz</option>
@@ -135,19 +136,24 @@
                         <select id="currency" name="currency">
                             <option selected>GBP</option>
                             <option>USD</option>
+                            <option>EURO</option>
+                            <option>SEK</option>
                         </select>
-                        <span id="price">Estimated Price:</span>
+                        <span id="price"></span>
                         <br/><br/>
-                        <span id="avail"></span>  
+                        <span id="avail"></span> 
                         <br></br>
-                        <ul></ul>
-                        <form action="pricing.html" method="get"> 
-                            <input type="submit" id="continue" value="Click to continue">
-                        </form>
+                        <div id="looking"></div>
+                        <ul id="protect">
+
+
+                        </ul>
+                   
+                            <input type="submit" id="continue" value="Click to continue"/>
+                            <input type="hidden" id="purchaseValues" val=""/>
                     </div>
             </div>
         </div>
     </div>
     </body>
 </html>
-

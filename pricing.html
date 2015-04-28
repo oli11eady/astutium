@@ -5,10 +5,15 @@
 	<title>
 		Professional Domain Registration
 	</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
   <link rel="shortcut icon" href="https://www.astutium.com/images/favicon.ico" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src ="configuration.js"></script>
+
 </head>
+ <body>
 	<div id="container">
+    <div class ='topContainer'>
       <div id="progress">
 
     <span class="label done">&#10004;</span>
@@ -17,130 +22,40 @@
     <span class="bar"></span>
     <span class="label">3</span>
   </div>
+   <div class = "cartStuff">
+         <span id ='cart'><img src= 'img/cart.png' class ="cart"/><span id='cartText'>(0)<span></span>
+         <span id='cartTotal'></span>
+     </div>
+</div>
 	    <div id="inner"> 
 	        <div id="content">
-	            <body>
-	            	</br></br>
-                  <table align="center" cellspacing="1" class="domainsuggestions">
-                      <tbody><tr><th width="50"></th><th>Domain Name</th><th>Registration Period</th></tr>
-                      <tr><td><br/></td></tr>
-                      
+	           
+	   
+                <h1>Domains Configuration</h1>
 
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.org.uk"></td>
-                      <td>abc123-example.org.uk</td><td><select name="domainsregperiod[abc123-example.org.uk]">
-                      <option value="2">2 Year/s @ £5.55</option><option value="3">3 Year/s @ £8.32</option>
-                      <option value="4">4 Year/s @ £11.10</option><option value="5">5 Year/s @ £13.87</option>
-                      <option value="6">6 Year/s @ £16.65</option><option value="7">7 Year/s @ £19.42</option>
-                      <option value="8">8 Year/s @ £22.20</option><option value="9">9 Year/s @ £24.97</option>
-                      <option value="10">10 Year/s @ £27.75</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.com"></td>
-                      <td>abc123-example.com</td><td><select name="domainsregperiod[abc123-example.com]">
-                      <option value="1">1 Year/s @ £6.99</option><option value="2">2 Year/s @ £15.30</option>
-                      <option value="3">3 Year/s @ £22.65</option><option value="4">4 Year/s @ £29.80</option>
-                      <option value="5">5 Year/s @ £36.75</option><option value="6">6 Year/s @ £43.50</option>
-                      <option value="7">7 Year/s @ £50.05</option><option value="8">8 Year/s @ £56.40</option>
-                      <option value="9">9 Year/s @ £62.55</option><option value="10">10 Year/s @ £68.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.net"></td>
-                      <td>abc123-example.net</td><td><select name="domainsregperiod[abc123-example.net]">
-                      <option value="1">1 Year/s @ £6.99</option><option value="2">2 Year/s @ £15.30</option>
-                      <option value="3">3 Year/s @ £22.65</option><option value="4">4 Year/s @ £29.80</option>
-                      <option value="5">5 Year/s @ £36.75</option><option value="6">6 Year/s @ £43.50</option>
-                      <option value="7">7 Year/s @ £50.05</option><option value="8">8 Year/s @ £56.40</option>
-                      <option value="9">9 Year/s @ £62.55</option><option value="10">10 Year/s @ £68.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.org"></td>
-                      <td>abc123-example.org</td><td><select name="domainsregperiod[abc123-example.org]">
-                      <option value="1">1 Year/s @ £6.99</option><option value="2">2 Year/s @ £15.30</option>
-                      <option value="3">3 Year/s @ £22.65</option><option value="4">4 Year/s @ £29.80</option>
-                      <option value="5">5 Year/s @ £36.75</option><option value="6">6 Year/s @ £43.50</option>
-                      <option value="7">7 Year/s @ £50.05</option><option value="8">8 Year/s @ £56.40</option>
-                      <option value="9">9 Year/s @ £62.55</option><option value="10">10 Year/s @ £68.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.biz"></td>
-                      <td>abc123-example.biz</td><td><select name="domainsregperiod[abc123-example.biz]">
-                      <option value="1">1 Year/s @ £6.99</option><option value="2">2 Year/s @ £15.30</option>
-                      <option value="3">3 Year/s @ £22.65</option><option value="4">4 Year/s @ £29.80</option>
-                      <option value="5">5 Year/s @ £36.75</option><option value="6">6 Year/s @ £43.50</option>
-                      <option value="7">7 Year/s @ £50.05</option><option value="8">8 Year/s @ £56.40</option>
-                      <option value="9">9 Year/s @ £62.55</option><option value="10">10 Year/s @ £68.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.info"></td>
-                      <td>abc123-example.info</td><td><select name="domainsregperiod[abc123-example.info]">
-                      <option value="1">1 Year/s @ £6.99</option><option value="2">2 Year/s @ £13.78</option>
-                      <option value="3">3 Year/s @ £20.37</option><option value="4">4 Year/s @ £26.76</option>
-                      <option value="5">5 Year/s @ £32.95</option><option value="6">6 Year/s @ £38.94</option>
-                      <option value="7">7 Year/s @ £44.73</option><option value="8">8 Year/s @ £50.32</option>
-                      <option value="9">9 Year/s @ £55.71</option><option value="10">10 Year/s @ £60.90</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.mobi"></td>
-                      <td>abc123-example.mobi</td><td><select name="domainsregperiod[abc123-example.mobi]">
-                      <option value="1">1 Year/s @ £7.99</option><option value="2">2 Year/s @ £15.30</option>
-                      <option value="3">3 Year/s @ £22.65</option><option value="4">4 Year/s @ £29.80</option>
-                      <option value="5">5 Year/s @ £36.75</option><option value="6">6 Year/s @ £43.50</option>
-                      <option value="7">7 Year/s @ £50.05</option><option value="8">8 Year/s @ £56.40</option>
-                      <option value="9">9 Year/s @ £62.55</option><option value="10">10 Year/s @ £68.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.tel"></td>
-                      <td>abc123-example.tel</td><td><select name="domainsregperiod[abc123-example.tel]">
-                      <option value="1">1 Year/s @ £7.99</option><option value="2">2 Year/s @ £15.30</option>
-                      <option value="3">3 Year/s @ £22.65</option><option value="4">4 Year/s @ £29.80</option>
-                      <option value="5">5 Year/s @ £36.75</option><option value="6">6 Year/s @ £43.50</option>
-                      <option value="7">7 Year/s @ £50.05</option><option value="8">8 Year/s @ £56.40</option>
-                      <option value="9">9 Year/s @ £62.55</option><option value="10">10 Year/s @ £68.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.me"></td>
-                      <td>abc123-example.me</td><td><select name="domainsregperiod[abc123-example.me]">
-                      <option value="1">1 Year/s @ £9.95</option><option value="2">2 Year/s @ £19.70</option>
-                      <option value="3">3 Year/s @ £29.25</option><option value="4">4 Year/s @ £38.60</option>
-                      <option value="5">5 Year/s @ £47.75</option><option value="6">6 Year/s @ £56.70</option>
-                      <option value="7">7 Year/s @ £65.45</option><option value="8">8 Year/s @ £82.35</option>
-                      <option value="9">9 Year/s @ £74.00</option><option value="10">10 Year/s @ £90.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.uk.com">
-                      </td><td>abc123-example.uk.com</td><td><select name="domainsregperiod[abc123-example.uk.com]">
-                      <option value="1">1 Year/s @ £17.95</option><option value="2">2 Year/s @ £49.30</option>
-                      <option value="3">3 Year/s @ £73.05</option><option value="4">4 Year/s @ £96.20</option>
-                      <option value="5">5 Year/s @ £118.75</option><option value="6">6 Year/s @ £140.70</option>
-                      <option value="7">7 Year/s @ £162.05</option><option value="8">8 Year/s @ £202.95</option>
-                      <option value="9">9 Year/s @ £182.80</option><option value="10">10 Year/s @ £222.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.uk.net"></td>
-                      <td>abc123-example.uk.net</td><td><select name="domainsregperiod[abc123-example.uk.net]">
-                      <option value="1">1 Year/s @ £17.95</option><option value="2">2 Year/s @ £49.30</option>
-                      <option value="3">3 Year/s @ £73.05</option><option value="4">4 Year/s @ £96.20</option>
-                      <option value="5">5 Year/s @ £118.75</option><option value="6">6 Year/s @ £140.70</option>
-                      <option value="7">7 Year/s @ £162.05</option><option value="8">8 Year/s @ £202.95</option>
-                      <option value="9">9 Year/s @ £182.80</option><option value="10">10 Year/s @ £222.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.gb.com">
-                      </td><td>abc123-example.gb.com</td><td><select name="domainsregperiod[abc123-example.gb.com]">
-                      <option value="1">1 Year/s @ £17.95</option><option value="2">2 Year/s @ £35.50</option>
-                      <option value="3">3 Year/s @ £52.65</option><option value="4">4 Year/s @ £69.40</option>
-                      <option value="5">5 Year/s @ £85.75</option><option value="6">6 Year/s @ £101.70</option>
-                      <option value="7">7 Year/s @ £117.25</option><option value="8">8 Year/s @ £147.15</option>
-                      <option value="9">9 Year/s @ £132.40</option><option value="10">10 Year/s @ £161.50</option>
-                      </select></td></tr>
-                      <tr><td><input type="checkbox" name="domains[]" value="abc123-example.gr.com"></td>
-                      <td>abc123-example.gr.com</td><td><select name="domainsregperiod[abc123-example.gr.com]">
-                      <option value="1">1 Year/s @ £12.95</option><option value="2">2 Year/s @ £25.50</option>
-                      <option value="3">3 Year/s @ £37.65</option><option value="4">4 Year/s @ £49.40</option>
-                      <option value="5">5 Year/s @ £60.75</option><option value="6">6 Year/s @ £71.70</option>
-                      <option value="7">7 Year/s @ £82.25</option><option value="8">8 Year/s @ £102.15</option>
-                      <option value="9">9 Year/s @ £92.40</option><option value="10">10 Year/s @ £111.50</option>
-                      </select></td></tr>
-                   </tbody></table>
-                   <br/>
-                    
-	            
-	        
-                 <form action="orderform.html" method="get"> 
-                         <input type="submit" id="continue2" value="Click to continue">
-                     </form>
-                     </body>
+          <div id='options'>
+
+            
+
+          </div>
+              <h2>NameServers</h2> <span id='nameText'>If you want to use custom nameservers then enter them below. By default, new domains will use our nameservers for hosting on our network.</span>
+              <div class= "optionsTable">
+              <label>NameServer 1:</label><input type='text' placeholder = "ns1.this-dns.net">
+              <br/>
+              <label>NameServer 2:</label><input type='text' placeholder = "ns2.this-dns.net">
+              <br/>
+              <label>NameServer 3:</label><input type='text' placeholder = "ns3.this-dns.net">
+              <br/>
+              <label>NameServer 4:</label><input type='text' placeholder = "ns4.this-dns.net">
+              <br/>
+              <label>NameServer 5:</label><input type='text' placeholder = "ns5.this-dns.net">
+
+              </div>
+
+      <input type="submit" id="continue" value="Click to continue"/>       
 	    </div>
       </div>
       
 	</div>
+  </body>
 </html>
