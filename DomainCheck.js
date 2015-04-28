@@ -36,8 +36,8 @@ var main = function(){
     	}
 
     	else{
-    		document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" +"path=/site";
-    		document.cookie = purchases + ";" + "path=/site";
+    		document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" +"path=/";
+    		document.cookie = purchases + ";" + "path=/";
     		
     		window.location.href = "pricing.html";
     	}
