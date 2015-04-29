@@ -31,22 +31,22 @@ var main = function() {
         if (cartCounter === 0) {
 
 
-<<<<<<< HEAD
+
             alert("You haven't got anything in your cart!");
         } else {
-            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" + "path=/site"; //gets rid of cookie, in context clears it so you can write a new one
-            document.cookie = purchases + ";" + "path=/site"; //sets cookie to what's in the cart
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" + "path=/"; //gets rid of cookie, in context clears it so you can write a new one
+            document.cookie = purchases + ";" + "path=/"; //sets cookie to what's in the cart
 
             window.location.href = "pricing.html"; //redirects to pricing
         }
-=======
+        
     	else{
     		document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" +"path=/";
     		document.cookie = purchases + ";" + "path=/";
     		
     		window.location.href = "pricing.html";
     	}
->>>>>>> ba880071b76770c6d46e490b18ea09ae007d4874
+
 
     });
 
