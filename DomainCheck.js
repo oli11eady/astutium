@@ -39,14 +39,6 @@ var main = function() {
 
             window.location.href = "pricing.html"; //redirects to pricing
         }
-        
-    	else{
-    		document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" +"path=/";
-    		document.cookie = purchases + ";" + "path=/";
-    		
-    		window.location.href = "pricing.html";
-    	}
-
 
     });
 
