@@ -65,7 +65,7 @@
 
         text-decoration: underline;
     }
-     #continue, #continue2{
+     #continue{
         
         display: block;
         position: relative;
@@ -369,10 +369,15 @@
 
     }
 
+    #sorry{
+
+        color: red;
+    }
     #removeCart{
         color: white;
         width: 90px;
          display: inline-block;
+         margin: 10px;
         border-radius: 10px;
         background: red;
          border: 1px;
@@ -396,7 +401,3 @@
         text-align: center;
     }
 
-    h1{
-        text-align: center;
-
-    }

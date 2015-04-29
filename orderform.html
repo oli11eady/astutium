@@ -1,4 +1,5 @@
-	<html>
+
+<html>
 		<head>
 			   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
@@ -11,63 +12,69 @@
 		</style>
 		</head>
 		<body>
-		<div id="container">
-		<div id="progress">
+			<div id="container">
+				<div id="progress">
 
-	    <span class="label done">&#10004;</span>
-	    <span class="bar"></span>
-	    <span class="label done">&#10004;</span>
-	    <span class="bar"></span>
-	    <span class="label current">3</span>
-	    </div>
-		    <div id="inner"> 
-
-
-		        <div id="content">
-			<h1>Review and Checkout</h1>
-
-			<table class="basket">
-				<tbody class="tableBody">
-					<tr>
-						<th>Description</th>
-						<th>Price</th>
-					</tr>
-				
-
-				</tbody>	
+			    <span class="label done">&#10004;</span>
+			    <span class="bar"></span>
+			    <span class="label done">&#10004;</span>
+			    <span class="bar"></span>
+			    <span class="label current">3</span>
+			    </div>
+				    <div id="inner"> 
 
 
-			</table>
-			<br/>
-			<h2>Your Details</h2>
-			<div class = "custContainer">
-				<div class="customerChoice">
-				Are you a new or existing cutomer?
-				<br/>
-				<label>New <input type = 'radio' value='new' name="custType"></label>
-				<label>Existing<input type = 'radio' value='exist' name="custType"></label>
+				        <div id="content">
+					<h1>Review and Checkout</h1>
+
+					<table class="basket">
+						<tbody class="tableBody">
+							<tr>
+								<th class='h1'>Description</th>
+								<th class='h2'>Price</th>
+							</tr>
 						
+
+						</tbody>	
+
+
+					</table>
+					<br/>
+					<h2 class='deets'>Your Details</h2>
+					<div class = "custContainer">
+						<div class="customerChoice">
+						Are you a new or existing cutomer?
+						<br/>
+						<label>New <input type = 'radio' value='new' name="custType"></label> 
+						<label style="padding-left:5em">Existing<input type = 'radio' value='exist' name="custType"></label>
+								
+						</div>
+						<div class='navigation'>
+							<br/>
+						<input type="button" value ='Back' id='back'>
+						<input type="button" value='Next' id='next'>
+					</div>
+					</div>
+
+					<div class = 'payment'>
+						<h2>Payment Method</h2>
+					<label><input name='paymentType' type = 'radio'>Automated Debit/Credit Card (FuturePay)</label>
+					<label style="padding-left:5em"><input name='paymentType' type = 'radio'>BACS/CHAPS/IBAN Transfer</label>
+					<br/>
+					<label><input name='paymentType' type = 'radio'>Debit/Credit Cards (Visa/Mastercard/Amex)</label>
+					<label style="padding-left:4.2em"><input name='paymentType' type = 'radio'>PayPal</label>
+					<br/>
+					<label><input name='paymentType' type = 'radio'>Bitcoins</label>
+					<label style="padding-left:19.95em"><input name='paymentType' type = 'radio'>Payment by Cheque / UK Bank Draft / Postal Order</label>
+
+						<h2>Promotional Code<h2>
+							<label><input type ='text'><input type ='button' value='Apply Code'><label>
+								<br/>
+								<br/>
+					<input class='complete' type='submit' value='Complete Order'>			
+							
+				    </div>
 				</div>
-				<input type="button" value ='Back' id='back'>
-				<input type="button" value='Next' id='next'>
 			</div>
-
-			<div class = 'payment'>
-				<h2>Payment Method</h2>
-			<label><input name='paymentType' type = 'radio'>Automated Debit/Credit Card (FuturePay)</label>
-			<label><input name='paymentType' type = 'radio'>BACS/CHAPS/IBAN Transfer</label>
-			<br/>
-			<label><input name='paymentType' type = 'radio'>Debit/Credit Cards (Visa/Mastercard/Amex)</label>
-			<label><input name='paymentType' type = 'radio'>PayPal</label>
-			<br/>
-			<label><input name='paymentType' type = 'radio'>Bitcoins</label>
-			<label><input name='paymentType' type = 'radio'>Payment by Cheque / UK Bank Draft / Postal Order</label>
-
-				<h2>Promotional Code<h2>
-					<label><input type ='text'><input type ='button' value='Apply Code'><label>	
-			
-		    </div>
-		</div>
-	</div>
-			</body>
+		</body>
 	</html>
