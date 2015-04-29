@@ -26,7 +26,7 @@ var main = function() {
 
     //deals with customer wanting to continue, checks cart, if nothing is in the cart user can't continue
     $('#continue').click(function() {
-        console.log(purchases);
+    
 
         if (cartCounter === 0) {
 
