@@ -12,7 +12,6 @@ function personal(){
 		"<label class='personal'>Last Name:</label><input class='personalText' type = 'text'><br/>"+
 		"<label class='personal'>Company Name:</label><input class='personalText' type = 'text'><br/>"+
 		"<label class='personal'>Email Adress:</label><input class='personalText' type = 'text' name='email'><br/>"+
-		"<label class='personal'>First Name:</label><input class='personalText' type = 'text'><br/>"+
 		"<label class='personal'>Password:</label><input class='personalText' type = 'password'><br/>"+
 		"<label class='personal'>Confirm Password:</label><input class='personalText' type ='password'>";
 
