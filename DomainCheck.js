@@ -45,15 +45,14 @@ var main = function() {
 
     //deals with customer wanting to continue, checks cart, if nothing is in the cart user can't continue
     $('#continue').click(function() {
-        console.log(purchases);
+    
 
         if (cartCounter === 0) {
 
-
             alert("You haven't got anything in your cart!");
         } else {
-            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" + "path=/site"; //gets rid of cookie, in context clears it so you can write a new one
-            document.cookie = purchases + ";" + "path=/site"; //sets cookie to what's in the cart
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" + "path=/"; //gets rid of cookie, in context clears it so you can write a new one
+            document.cookie = purchases + ";" + "path=/"; //sets cookie to what's in the cart
 
             window.location.href = "pricing.html"; //redirects to pricing
         }
