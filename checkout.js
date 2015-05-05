@@ -7,8 +7,8 @@ var welcome;
 
 function personal(){
 	count =2;
-		$('#back').attr('disabled', true);
-		var info = "<label class='personal'>First Name:</label><input class='personalText' type = 'text'><br>"+
+		$('#back').attr('disabled', false);
+		var info = "<label class='personal'>First Name:</label><input class='personalText' type = 'text' required><br>"+
 		"<label class='personal'>Last Name:</label><input class='personalText' type = 'text'><br/>"+
 		"<label class='personal'>Company Name:</label><input class='personalText' type = 'text'><br/>"+
 		"<label class='personal'>Email Adress:</label><input class='personalText' type = 'text' name='email'><br/>"+
@@ -63,10 +63,10 @@ $('#back').attr('disabled', false);
 "</select>"+
 "<br/><label class='security'>Answer: </label><input class='securityText' type='password'>"+
 "<br/><label class='security'>Mobile Number</label><input class='securityText' type='text'>"+
-"<br/><label class='security1'>SMS invoice notifications: </label><input class='securityText1' type='checkbox'>"+
+"<br/><label class='security'> SMS notifications: </label><input class='securityTextCheck' type='checkbox'>"+
 "<br/><label class='security'>Date of Birth:</label><input class='securityText' type='text' placeholder='dd/mm/yyyy'>"+
-"<br/><label class='security2'>Twitter handle: <label><input class='securityText2' type='text' placeholder='Without the @'>"+
-"<br/><label class='security3'>Customer Type:</label><select class='securityText3'>"+
+"<br/><label class='security'>Twitter handle: </label><input class='securityText' type='text' placeholder='Without the @'>"+
+"<br/><label class='security'>Customer Type:</label><select class='securityText'>"+
 "<option>End user</option>"+
 "<option>Designer/Developer</option>"+
 "<option>Reseller</option>"+
@@ -85,9 +85,26 @@ function login(){
 	$('.customerChoice').html(welcome);
 	$('#back').remove();
 	$('#next').remove();
-
-
 	$('content').append();
+}
+
+//Gets the currency used.
+function getCurrency(){
+
+	var test = selections[0].split(":");
+	test = test[1];
+	var regex = new RegExp("[£$€]");  //checks for currency
+	
+	if(regex.exec(test) != null){
+
+		return regex.exec(test)[0];
+	}
+
+	else{  //if it's null, then the currency is kr
+
+		return "";
+	}
+
 }
 
 var main = function(){
@@ -100,7 +117,7 @@ $('input[name=custType]').click(function(){
 	newOld = $('input[name=custType]:checked').val();
 	if(newOld === "exist"){
 		$('#append').remove();
-		$('.customerChoice').append("<div id='append'><label class='login'>Email Adress:<label><input class='loginText1' type='text' name='email'><br/>"+
+		$('.customerChoice').append("<div id='append'><label class='login'>Email Adress:</label><input class='loginText1' type='text' name='email'><br/>"+
 			"<label class='login'>Password:</label><input class='loginText2' type='password' name='pass'><br></div>");
 		count=4;
 		
@@ -126,6 +143,11 @@ $('input[name=custType]').click(function(){
 
 			personal();
 
+		}
+
+		else if(count ===2){
+			
+			location.reload();
 		}
 
 	
@@ -182,12 +204,13 @@ $('input[name=custType]').click(function(){
 
 	var sub = subtotal();
 	var vat = vatCalc(sub);
-	$('.tableBody').append("<tr><td class='sub'>Subtotal</td><td class='sub2'>"+sub+"</td></tr>");
-	$('.tableBody').append("<tr><td class='row2'>VAT-GB @ 20.00%:</td><td class='row3'>"+vat+"</td><tr>")
+	var currencySign = getCurrency();
+	$('.tableBody').append("<tr><td class='sub'>Subtotal</td><td class='sub2'>"+currencySign+sub+"</td></tr>");
+	$('.tableBody').append("<tr><td class='row2'>VAT-GB @ 20.00%:</td><td class='row3'>"+currencySign+vat+"</td><tr>")
 
 	var total = parseFloat(sub) + parseFloat(vat);
 	total = total.toFixed(2);
-	$('.tableBody').append("<tr><td class='total'>Total:</td><td class='total2'>"+total+"</td ></tr>")
+	$('.tableBody').append("<tr><td class='total'>Total:</td><td class='total2'>"+currencySign+total+"</td ></tr>")
 }
 
 function vatCalc(subtotal){
@@ -207,7 +230,8 @@ function subtotal(){
 		var price = split[1].replace(/[^0-9.]/g, "");
 		subtotal = parseFloat(price) + subtotal;
 	}
-
+	
+	
 	subtotal = subtotal.toFixed(2);
 	return subtotal;
 }

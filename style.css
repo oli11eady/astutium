@@ -1,14 +1,36 @@
-    legend{ 
+h2,h3{
+    font-size: 22px;
+    color: #100D69;
+}
 
-        margin-bottom: 10px;
-    }
+h3
+{
+    font-size: 18px;
+    width: 270px;
 
+}
+
+.reasons
+{
+    width: 500px;
+    font-size: 12px;
+    font-weight: none;
+ }   
     .info label{
     display: inline-block;
     width: 200px;
     margin-left: 50px;
 
     }
+
+    .circle{
+
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        z-index: 1;
+    }
+
 
     .info input{
         display: inline-block;
@@ -82,7 +104,6 @@
     }
 
     #continue:hover{
-
        
      text-decoration: underline;
     }
@@ -136,23 +157,24 @@
         text-align: center;
 
     }
-    #content a:hover #text {
+   
+    .popup:hover .text {
         display: inline-block;
         position: relative;
         top : 5px;
         padding: 10px;
-
         color:#0C89AF;
         font-weight: normal;
         background:  white;
         text-align:left;
         border: 1px solid black;
         margin-right: 30px;
+        margin-bottom: 15px;
 
     }
 
 
-    #quest {
+    .quest {
         position: relative; ;
         display: inline-block;
         margin-left: 5px;
@@ -170,8 +192,9 @@
         border-radius: 50%;
     }
 
-    #text {
+    .text {
         display: none;
+       
     }
 
    
@@ -277,10 +300,10 @@
 
 
     #progress{
-
+        position: relative;
         display: block;
         margin: 0 auto;
-        width: 600px;
+        width: 700px;
         text-align: center;
         font-family: "Open Sans";
 
@@ -297,13 +320,16 @@
 
     .bar{
         background: #fff;
-
+        position: absolute;
         display: inline-block;
-        width: 100px;
+        width: 400px;
         height: 5px;
         border: 1px solid #d5d5da;
-        margin: 0 -5px 0px -5px;
+        margin: 0 auto;
         border-radius: 10%;
+        margin-top: 17.5px;
+        left: 130px;
+     
 
     }
 
@@ -318,6 +344,16 @@
         padding: 0;
     }
 
+    .textCurrent{
+
+     color: #20A1C9;
+    }
+
+    .default
+    {
+        color: rgb(119,119,119);
+
+    }
     #addCart
     {   
         color: white;

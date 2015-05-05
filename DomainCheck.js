@@ -23,6 +23,25 @@ var main = function() {
 
 
     });
+    var reasonCount = 0;
+    //adds more reasons to purchase hosting when clicked
+    $('h3').click(function(){
+
+       if(reasonCount % 2 === 0){
+        $(this).append("<ul class='reasons'><li>Local presence services for required country-code registrations</li>"+
+            "<li>1-stop-shop for all your domain and hosting requirements</li>"+
+            "<li>Total coverage - Every Global & Country TLD supported</li>"+
+            "<li>Fully automated online registration process (where registry supports it)</li>"+
+            "<li>Cheapest overall prices in Europe</li>"+
+            "<li>Free self-managed DNS Zone included with domains</li>"+
+            "<li>Extensive additional domain services available inc. Trademark Monitoring and Domain Recovery</li>"+
+            "</ul>");}
+        else{
+            $(this).html("Need more reasons? Click me!");
+        }
+            reasonCount++;
+
+    });
 
     //deals with customer wanting to continue, checks cart, if nothing is in the cart user can't continue
     $('#continue').click(function() {
@@ -31,7 +50,6 @@ var main = function() {
         if (cartCounter === 0) {
 
 
-<<<<<<< HEAD
             alert("You haven't got anything in your cart!");
         } else {
             document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" + "path=/site"; //gets rid of cookie, in context clears it so you can write a new one
@@ -39,14 +57,6 @@ var main = function() {
 
             window.location.href = "pricing.html"; //redirects to pricing
         }
-=======
-    	else{
-    		document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;" +"path=/";
-    		document.cookie = purchases + ";" + "path=/";
-    		
-    		window.location.href = "pricing.html";
-    	}
->>>>>>> ba880071b76770c6d46e490b18ea09ae007d4874
 
     });
 
@@ -346,7 +356,7 @@ function checkAvailibilty(url, domain, availableText, extension, currency) {
 
         },
         error: function() {
-            alert("Error");
+            alert("I haven't finished checking your domain for you!");
         },
         dataType: "text"
     });
@@ -462,7 +472,7 @@ function extensionOptionAdder(url, domain, extension, currency) {
 
         },
         error: function() {
-            alert("Error");
+        
         },
         dataType: "text"
     });

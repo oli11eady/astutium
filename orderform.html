@@ -14,13 +14,23 @@
 		<body>
 			<div id="container">
 				<div id="progress">
-
-			    <span class="label done">&#10004;</span>
-			    <span class="bar"></span>
-			    <span class="label done">&#10004;</span>
-			    <span class="bar"></span>
-			    <span class="label current">3</span>
-			    </div>
+            <div class='circle'>
+            <span class="label done">&#10004;</span>
+            <br/>
+            <label class="textDone">Choose a Domain</label>
+            </div>
+            <span class="bar"></span>
+            <div class='circle'>
+            <span class="label done">&#10004;</span>
+            <br/>
+            <label class='textDone'>Configure your Choice</label>
+            </div>
+             <div class='circle'>
+            <span class="label current">3</span>
+            <br/>
+            <label class='textCurrent'>Checkout</label>
+            </div>
+        </div>
 				    <div id="inner"> 
 
 
@@ -41,31 +51,37 @@
 					</table>
 					<br/>
 					<h2 class='deets'>Your Details</h2>
+
 					<div class = "custContainer">
 						<div class="customerChoice">
 						Are you a new or existing cutomer?
-						<br/>
+						<br/><br/>
 						<label>New <input type = 'radio' value='new' name="custType"></label> 
-						<label style="padding-left:5em">Existing<input type = 'radio' value='exist' name="custType"></label>
+						<label>Existing<input type = 'radio' value='exist' name="custType"></label>
 								
 						</div>
 						<div class='navigation'>
 							<br/>
-						<input type="button" value ='Back' id='back'>
-						<input type="button" value='Next' id='next'>
+						<input type="submit" value ='Back' id='back'>
+						<input type="submit" value='Next' id='next'>
 					</div>
+					
 					</div>
 
-					<div class = 'payment'>
+					
 						<h2>Payment Method</h2>
-					<label><input name='paymentType' type = 'radio'>Automated Debit/Credit Card (FuturePay)</label>
-					<label style="padding-left:5em"><input name='paymentType' type = 'radio'>BACS/CHAPS/IBAN Transfer</label>
+						<div class = 'payment'>
+					<label class='payOpt'><input name='paymentType' type = 'radio'>Automated Debit/Credit Card (FuturePay)</label>
+					<label class='payOpt'><input name='paymentType' type = 'radio'>BACS/CHAPS/IBAN Transfer</label>
 					<br/>
-					<label><input name='paymentType' type = 'radio'>Debit/Credit Cards (Visa/Mastercard/Amex)</label>
-					<label style="padding-left:4.2em"><input name='paymentType' type = 'radio'>PayPal</label>
+					<label class='payOpt'><input name='paymentType' type = 'radio'>Debit/Credit Cards (Visa/Mastercard/Amex)</label>
+					<label class='payOpt'><input name='paymentType' type = 'radio'>PayPal</label>
 					<br/>
-					<label><input name='paymentType' type = 'radio'>Bitcoins</label>
-					<label style="padding-left:19.95em"><input name='paymentType' type = 'radio'>Payment by Cheque / UK Bank Draft / Postal Order</label>
+					<label class='payOpt'><input name='paymentType' type = 'radio'>BitCoins (BTC)</label>
+					<label class='payOpt'><input name='paymentType' type = 'radio'>Payment by Cheque / UK Bank Draft / Postal Order</label>
+					<br/>
+					
+				</div>
 
 						<h2>Promotional Code<h2>
 							<label><input type ='text'><input type ='button' value='Apply Code'><label>
@@ -73,7 +89,7 @@
 								<br/>
 					<input class='complete' type='submit' value='Complete Order'>			
 							
-				    </div>
+				    
 				</div>
 			</div>
 		</body>

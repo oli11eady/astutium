@@ -1,13 +1,16 @@
 h1{
 
 text-align: center;
-font-size: 18px;
-
+font-size: 22px;
+color:#0C73AF;
+margin-bottom: 30px;
 }
 
 h2{
 
 font-size: 18px;
+   text-align:  center;
+     color:  #0C73AF;  
 }
 
 body { 
@@ -123,14 +126,15 @@ body {
 
 .custContainer{
 
-  border: 1px solid black;
-  border-color:green;
+  border: 1px solid rgb(119,119,119);
   padding: 20px;
+  text-align: center;
 }
 
 .personal{
     display: inline-block;
-    width: 200px;
+    width: 160px;
+    text-align: left;
     
 }
 
@@ -138,96 +142,57 @@ body {
 
     display: inline-block;
     width: 250px;
-    margin-left: 50px;
+    
     margin-top: 10px;
 }
 
 .address{
     display: inline-block;
-    width: 200px;
-    
+    width: 160px;
+    text-align: left;
 }
 
 .addressText{
 
     display: inline-block;
     width: 250px;
-    margin-left: 50px;
+    
     margin-top: 10px;
-}
 
+
+}
 .security{
     display: inline-block;
-    width: 200px;    
-}
-.security1{
-    display: inline-block;
-    width: 200px;
-    margin-top: 10px;    
-}
-.security2{
-    display: inline-block;
-    width: 200px;
-    margin-top: 10px;    
-}
-
-.security3{
-    display: inline-block;
-    width: 200px;
-    margin-top: 10px;
+    width: 160px;    
+    text-align: left;
 }
 
 .securityText{
 
     display: inline-block;
     width: 250px;
-    margin-left: 50px;
+
+    text-align: left;
     margin-top: 10px;
 }
 
-.securityText1{
+.securityTextCheck{
 
     display: inline-block;
-    width: 250px;
-    margin-left: -67px;
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-right: 237.78px; /*250-width*/
+
 }
 
-.securityText2{
-
-    display: inline-block;
-    width: 250px;
-    margin-left: 250px;
-    margin-top: -20px;
-}
-
-.securityText3{
-
-    display: inline-block;
-    width: 250px;
-    margin-left: 250px;
-    margin-top: -15px;
-}
 
 .login{
     display: inline-block;
-    width: 200px; 
-    margin-top: 10px;   
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: right;   
 }
 
-.loginText1{
-    display: inline-block;
-    width: 250px;
-    margin-left: 250px;
-    margin-top: -20px;
-}
-
-.loginText2{
-    display: inline-block;
-    width: 250px;
-    margin-left: 250px;
-    margin-top: -15px;
-}
 
 .basket{
 
@@ -248,6 +213,7 @@ body {
 
     background: #20A1C9;
     width: 250px;
+   
 
 }
 
@@ -329,18 +295,75 @@ border-top: 1px solid black;
    
 }
 
-#next, #back{
+#next{
    
     margin-left: 20px;
     border: 1px;
     border-radius: 2px;
 }
-.customerChoice{
 
 
-    
+.payOpt{
+  width: 400px;
+  display: inline-block;
+  text-align: left;
+
 }
 
-.deets{
+.payment{
 
+  text-align: center;
+  border: 1px rgb(119,119,119) solid;
+  padding: 20px;
 }
+
+.circle{
+
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        z-index: 1;
+    }
+
+
+    #progress{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 700px;
+        text-align: center;
+        font-family: "Open Sans";
+        margin-bottom: 20px;
+
+    }
+
+
+    .textCurrent{
+
+     color: #20A1C9;
+    }
+
+    .default
+    {
+        color: rgb(119,119,119);
+
+    }
+
+     .textDone
+    {
+        color: #8bc435;
+    }
+
+    .bar{
+        background: #fff;
+        position: absolute;
+        display: inline-block;
+        width: 400px;
+        height: 5px;
+        border: 1px solid #d5d5da;
+        margin: 0 auto;
+        border-radius: 10%;
+        margin-top: 17.5px;
+        left: 130px;
+
+    }
