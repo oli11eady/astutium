@@ -1,3 +1,5 @@
+//Contributors: Oliver Eady and John Angeles
+
 var cookie = document.cookie;
 var selections = cookie.split(",");
 var prev;
@@ -5,6 +7,7 @@ var count = 0;
 var newOld;
 var welcome;
 
+//displays the first page of new user information
 function personal(){
 	count =2;
 		$('#back').attr('disabled', false);
@@ -22,6 +25,7 @@ function personal(){
 
 }
 
+//diplays the second page of new user information
 function address(){
 	$('#back').attr('disabled', false);
 	count =3;
@@ -37,6 +41,7 @@ function address(){
 
 }
 
+//displays the 3rd page of new user information
 function security(){
 	count =  4;
 $('#back').attr('disabled', false);
@@ -79,6 +84,7 @@ $('#back').attr('disabled', false);
 
 }
 
+//display when logging in as either a new user or existing user
 function login(){
 
 	$('.customerChoice').html(welcome);
@@ -106,6 +112,7 @@ function getCurrency(){
 
 }
 
+//deals with all the event listeners
 var main = function(){
 
 $('#back').attr('disabled', true);
@@ -194,7 +201,7 @@ $('input[name=custType]').click(function(){
 
 
 
-
+	//processes user's selections, values are retrieved from cookies
 	for(var i = 0; i<selections.length; i++){
 
 	var split = selections[i].split(":"); 
@@ -212,6 +219,7 @@ $('input[name=custType]').click(function(){
 	$('.tableBody').append("<tr><td class='total'>Total:</td><td class='total2'>"+currencySign+total+"</td ></tr>")
 }
 
+//calculates the VAT
 function vatCalc(subtotal){
 
 	vat = subtotal * 0.2;
@@ -220,7 +228,7 @@ function vatCalc(subtotal){
 }	
 
 
-
+//calculates the subtotal
 function subtotal(){
 	var subtotal = 0;
 	for(var i =0; i<selections.length; i++){

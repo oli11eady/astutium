@@ -1,11 +1,12 @@
+
 var main = function(){
 
-	console.log(document.cookie);
+	console.log(document.cookie);  //loads cookie
 
 	var cookie = document.cookie;
 	var selections = cookie.split(",");
 
-
+	//called when continue button is clicked
 	$('#continue').click(function(){
 		var empty = false;
 		var elements = $(".required");
@@ -25,13 +26,13 @@ var main = function(){
 
 		else{
 
-			window.location.href = "orderform.html";
+			window.location.href = "orderform.html";  //changes web page
 		}
 	
 	
 	});
 
-
+	//puts number of items in cart
 	$('#cartText').html("("+selections.length+")");
 	for(var i = 0; i<selections.length; i++){
 		var split = selections[i].split("-");
