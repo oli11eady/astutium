@@ -12,7 +12,7 @@ var main = function() {
     $.ajax({
 
         type: 'GET',
-        url: 'prices.xml',
+        url: 'xml/prices.xml',
         dataType: 'xml',
         success: function(data) {
 
